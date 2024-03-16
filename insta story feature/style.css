@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(17, 86, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#card{
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    height: 430px;
+    width: 310px;
+    background-color: rgb(33, 33, 33);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+#stories{
+    background-color: black;
+    padding: 15px;
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    overflow: hidden;
+    height: 90px;
+    border-radius: 50%;
+    width: 90px;
+    border: 3px solid rgb(255, 0, 200);      
+    display: inline-block;
+    margin-right: 5px;
+    /* transition: transform 0.3s ease; Smooth transform transition */
+
+
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+#fullscreen{
+    transition: all ease-in;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    /* transition: opacity 0.3s ease; Smooth fade transition */
+
+}
+
+h2{
+ /* color: rgb(245, 17, 180); */
+ background-image: linear-gradient(to right, #f700a0, #d78a42);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;       
+ font-weight: 600;
+ text-align: center;
+ font-size: 30px;
+ margin-top: 50px;   
+ /* text-decoration: underline; */
+}
